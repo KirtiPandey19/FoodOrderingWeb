@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 0px;
+}
+
+#logo {
+    display: flex;
+    margin: 0px;
+}
+
+#logo img {
+    height: 60px;
+    width: 60px;
+    margin: 5px;
+}
+
+#navbar ul {
+    display: flex;
+    padding: 0px 2px;
+}
+
+#navbar ul li {
+    border-radius: 2px;
+    list-style: none;
+    font-size: 21px;
+    font-family: 'Kavoon', cursive;
+}
+
+#navbar ul li a {
+    font-family: 'Kavoon', cursive;
+    border-radius: 45px;
+    font: bold;
+    color: white;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    margin: 8px;
+}
+
+#navbar ul li a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    height: 70px;
+    width: 100%;
+    opacity: 0.9;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 540px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?cs=srgb&dl=pexels-ella-olsson-1640777.jpg&fm=jpg') no-repeat center center/cover;
+    z-index: -1;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    opacity: 0.75;
+}
+
+#home h1 {
+    color: black;
+    text-align: center;
+}
+
+#home p {
+    font-family: 'Kavoon', cursive;
+    text-align: center;
+    font-size: 20px;
+}
+
+#services {
+    margin: 5px 24px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid purple;
+    padding: 34px;
+    width: 40%;
+    margin: 25px 8px;
+    text-align: center;
+    border-radius: 23px;
+    background-color: lightgoldenrodyellow;
+    margin-bottom: 20px;
+}
+
+#services .box img {
+    display: block;
+    margin: auto;
+    height: 160px;
+    width
+}
+
+.h-primary center {
+    display: flex
+}
+
+.h-primary {
+    font-size: 40px;
+    padding: 10px 6px;
+    text-align: center;
+}
+
+.h-secondary {
+    font-size: 30px;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid darkblue;
+    background-color: white;
+    margin: 17px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#home .btn::hover {
+    color: white;
+    background-color: black;
+}
+
+.centre {
+    text-align: center;
+}
+
+.service-container {
+    display: flex;
+}
+
+#client-section {
+    height: 344px;
+    position: relative;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    padding: 6px;
+    background: url('https://images.pexels.com/photos/2930966/pexels-photo-2930966.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat center center/cover;
+    z-index: -1;
+    height: 90%;
+    width: 100%;
+}
+
+#clients {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+#clients img {
+    height: 130px;
+    width: 150px;
+}
+
+
+/* contact section */
+
+#contact {
+    position: relative;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    border-radius: 18px;
+}
+
+#contact-box label {
+    width: 40%;
+    font-size: 18px;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.form-group {
+    text-align: center;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('https://diabetes.org/sites/default/files/2019-08/Diabetes-Superfoods-min.jpg')no-repeat center center/cover;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 9px 20px;
+}
